@@ -1,0 +1,48 @@
+.morgen {
+  width: 100%;
+  background-image: url(../images/customer-reviews/morogen-font.svg);
+  background-size: cover;
+}
+
+.morgen__text {
+  background: #84a178;
+  border-radius: 10px;
+
+  @media screen and (max-width: 767px) {
+    width: 480px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}
+
+.morgen__text--emily {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2.58;
+  text-align: center;
+  color: #fcfcfc;
+}
+
+.morgen__text--los {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.85;
+  text-align: center;
+  color: #000000;
+}
