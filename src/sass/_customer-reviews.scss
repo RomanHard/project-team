@@ -1,7 +1,16 @@
 .morgen {
+  background-image: url(../images/customer-reviews/morgen-font.png);
+  padding: 0 20px;
   width: 100%;
-  background-image: url(../images/customer-reviews/morogen-font.svg);
   background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .morgen {
+    background-image: url('../images/customer-reviews/morgen-font@2.png');
+  }
 }
 
 .morgen__text {
@@ -11,19 +20,19 @@
   @media screen and (max-width: 767px) {
     width: 480px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 39px;
   }
 
   @media screen and (min-width: 768px) {
     width: 768px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 20px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 20px;
   }
 }
 
