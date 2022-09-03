@@ -2,11 +2,6 @@
   background-image: url(../images/customer-reviews/morgen-font.png);
   background-size: cover;
   padding: 0 20px;
-
-  display: flex;
-  align-items: center;
-
-  flex-direction: column;
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -17,8 +12,26 @@
   }
 }
 
-.morgen img {
-  margin-top: 80px;
+.morgen__emily {
+  padding-top: 80px;
+  padding-bottom: 420px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .morgen__emily {
+    padding-top: 223px;
+    padding-bottom: 384px;
+  }
+}
+
+@media (min-width: 1200) {
+  .morgen__emily {
+    padding-top: 456px;
+    padding-bottom: 196px;
+  }
 }
 
 .morgen__text {
@@ -64,6 +77,4 @@
   line-height: 1.85;
   text-align: center;
   color: #000000;
-
-  margin-bottom: 420px;
 }
