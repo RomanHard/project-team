@@ -1,0 +1,188 @@
+.advantages {
+  padding-top: 42px;
+  padding-bottom: 36px;
+  background-color: #84a178;
+}
+
+.advantages__title {
+  font-family: 'Seymour One', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.26;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #fcfcfc;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+@media screen and (min-width: 768px) {
+  .benefits {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+  }
+}
+
+.benefits__item:not(:last-child) {
+  margin-bottom: 28px;
+}
+
+.benefits__item::before {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f8d24e;
+  margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits__item::before {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits__item::before {
+    margin-bottom: 40px;
+  }
+}
+
+.benefits__item:first-child::before {
+  background-image: url(../images/advantages/cow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.benefits__item:nth-child(2)::before {
+  background-image: url(../images/advantages/weight.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.benefits__item:nth-of-type(3)::before {
+  background-image: url(../images/advantages/ice-cream.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.benefits__title {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fcfcfc;
+  margin-bottom: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits__title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    line-height: 1.22;
+    color: #ffffff;
+    text-transform: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits__title {
+    // font-family: 'Montserrat';
+    font-size: 58px;
+    color: #fcfcfc;
+    text-transform: none;
+  }
+}
+
+.benefits__text {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  color: #fcfcfc;
+
+  max-width: 230px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+
+    color: #ffffff;
+    max-width: 152px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits__text {
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+
+    color: #fcfcfc;
+    max-width: 368px;
+  }
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
