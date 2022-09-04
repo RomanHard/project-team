@@ -1,5 +1,5 @@
 <header class="head-block">
-    <div class="container container-header">
+    <div class="container-header">
        <nav class="page-nav"> 
         <a href="./index.html" target="_blank" rel="noopener noreferrer" 
         class="logo-header">
@@ -7,12 +7,14 @@
                 <source 
                 srcset="./images/hero-header/desktop/logo-ice-cream1x.png 1x, ./images/hero-header/desktop/logo-ice-cream2x.png 2x" 
                 media="(min-width: 1200px)" />
-                <!-- <source 
-                srcset="./img/img-tablet/people/img-tab.jpg 1x, ./img/img-tablet/people/img-tab2x.jpg 2x" 
+                <source 
+                srcset="./images/hero-header/tablet/logo-ice-cream-tablet1x.png 1x, 
+                ./images/hero-header/tablet/logo-ice-cream-tablet2x.png 2x" 
                 media="(min-width: 768px)" />
                 <source 
-                srcset="./img/mobile-img/people/img-mobile.jpg 1x, ./img/mobile-img/people/img-mobile-x2.jpg 2x" 
-                media="(max-width: 767px)" /> -->
+                srcset="./images/hero-header/mobile/logo-ice-cream-mobile1x.png 1x, 
+                ./images/hero-header/mobile/logo-ice-cream-mobile2x.png 2x" 
+                media="(max-width: 767px)" />
 
                 <img src="./images/hero-header/desktop/logo-ice-cream1x.png" 
                     alt="logo-header"
@@ -39,22 +41,29 @@
             </li>
         </ul>
         </nav>
-    
-        <button type="button" class="button-menu" data-modal-open >
-            Buy now
-            <svg  width="14" height="18">
-                <use href="./images/sprite.svg#buy-now"></use>
-            </svg>
-        </button>
+        <div class="header-btn">
+            <button type="button" class="mobile-menu-open">
+                <svg width="25" height="25">
+                    <use href="./images/sprite.svg#burger"></use>
+                </svg>
+               </button>
+            <button type="button" class="button-menu" data-modal-open >
+                Buy now
+                <svg  width="14" height="18">
+                    <use href="./images/sprite.svg#buy-now"></use>
+                </svg>
+            </button>
+        </div>
+       
 
     </div>  
 </header>
 <section class="hero">
-    <div class="container container-hero">
+    <div class="container-hero">
         <div class="hero-box-main">
             <div class="hero-box">
                 <h1 class="hero-box__title">
-                    ice cream made with passion
+                    ice cream made with <span class="hero-box__title__span">passion</span>
                 </h1>
             <ul class="hero-box__menu">
                 <li class="hero-box__list">
@@ -66,7 +75,7 @@
                     <button type="button" class="hero-box__btn">How it’s made?</button>
                 </li>
             </ul>
-            </div>
+            </div> 
             <ul class="hero-box-main__menu">
                 <li>
                     <ul class="hero-box-main__menu__list">
@@ -74,7 +83,7 @@
                         <li class="hero-box-main__menu__text">cafes</li>
                     </ul>
                 </li>
-                <li>
+                <li> 
                     <ul class="hero-box-main__menu__list">
                         <li class="hero-box-main__menu__number">23</li>
                         <li class="hero-box-main__menu__text">food trucks</li>
@@ -87,14 +96,15 @@
                 <source 
                 srcset="./images/hero-header/desktop/plate-ice-cream1x.png 1x, ./images/hero-header/desktop/plate-ice-cream2x.png 2x" 
                 media="(min-width: 1200px)" />
-                <!-- <source 
-                srcset="./img/img-tablet/people/img-tab.jpg 1x, ./img/img-tablet/people/img-tab2x.jpg 2x" 
-                media="(min-width: 768px)" />
                 <source 
-                srcset="./img/mobile-img/people/img-mobile.jpg 1x, ./img/mobile-img/people/img-mobile-x2.jpg 2x" 
-                media="(max-width: 767px)" /> -->
+                srcset="./images/hero-header/tablet/plate-ice-cream-tablet1x.png 1x, 
+                ./images/hero-header/tablet/plate-ice-cream-tablet2x.png 2x" 
+                media="(min-width: 768px)" />
+              
 
-                <img src="./images/hero-header/desktop/plate-ice-cream1x.png" alt="plate-ice-cream1x">
+                <img src="./images/hero-header/desktop/plate-ice-cream1x.png" 
+                alt="plate-ice-cream1x"
+                class="box-plate__img">
 
               </picture>
             
@@ -111,12 +121,14 @@
             srcset="./images/hero-header/desktop/hero-ice-cream1x.png 1x, 
             ./images/hero-header/desktop/hero-ice-cream2x.png 2x" 
             media="(min-width: 1200px)" />
-            <!-- <source 
-            srcset="./img/img-tablet/people/img-tab.jpg 1x, ./img/img-tablet/people/img-tab2x.jpg 2x" 
+            <source 
+            srcset="./images/hero-header/tablet/hero-ice-cream-tablet1x.png 1x, 
+            ./images/hero-header/tablet/hero-ice-cream-tablet2x.png 2x" 
             media="(min-width: 768px)" />
             <source 
-            srcset="./img/mobile-img/people/img-mobile.jpg 1x, ./img/mobile-img/people/img-mobile-x2.jpg 2x" 
-            media="(max-width: 767px)" /> -->
+            srcset="./images/hero-header/mobile/hero-ice-cream-mobile1x.png 1x, 
+            ./images/hero-header/mobile/hero-ice-cream-mobile2x.png 2x" 
+            media="(max-width: 767px)" />
 
             <img src="./images/hero-header/desktop/hero-ice-cream1x.png" 
             alt="hero-img"
@@ -129,12 +141,14 @@
             srcset="./images/hero-header/desktop/hero-points1x.png 1x, 
             ./images/hero-header/desktop/hero-points2x.png 2x" 
             media="(min-width: 1200px)" />
-            <!-- <source 
-            srcset="./img/img-tablet/people/img-tab.jpg 1x, ./img/img-tablet/people/img-tab2x.jpg 2x" 
+            <source 
+            srcset="./images/hero-header/tablet/hero-points-tablet1x.png 1x, 
+            ./images/hero-header/tablet/hero-points-tablet2x.png 2x" 
             media="(min-width: 768px)" />
             <source 
-            srcset="./img/mobile-img/people/img-mobile.jpg 1x, ./img/mobile-img/people/img-mobile-x2.jpg 2x" 
-            media="(max-width: 767px)" /> -->
+            srcset="./images/hero-header/mobile/hero-points-mpbile1x.png 1x, 
+            ./images/hero-header/mobile/hero-points-mpbile2x.png 2x" 
+            media="(max-width: 767px)" />
 
             <img src="./images/hero-header/desktop/hero-points1x.png" 
             alt="hero-points"

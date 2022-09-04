@@ -1,0 +1,164 @@
+:root{
+    --transition:250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+@mixin font($fs:24px, $fw:700, $lh:1.15) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+}
+%align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.head-block{
+    background: #84A178;
+}
+
+.container-hero{
+    position: relative;
+    padding-bottom: 60px;
+     margin-left: auto;
+     margin-right: auto;
+    
+}
+
+.container-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     padding: 16px;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+.page-nav{
+    display: flex;
+}
+
+.page-nav__menu{
+    display: flex;
+    gap: 27px;
+}
+.page-nav__list{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+}
+.page-nav__link{
+    color: #FCFCFC;
+    padding: 15px 0;
+}
+.page-nav__link:hover,
+.page-nav__link:focus{
+    color: #F8D24E;
+}
+
+
+.button-menu{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    background-color: #F8D24E;
+    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: none;
+    padding: 12px 33px;
+    gap: 15px;
+    height: 42px;
+    cursor: pointer;
+    text-transform: none;
+    
+    &:hover,
+    &:focus{
+        background-color: #0A8817;
+    }
+}
+
+@media screen and (max-width:767px) {
+   .container-header{
+       width: 320px;
+   }
+
+    .page-nav__menu{
+        display: none;
+    }
+    .button-menu{
+        display: none;
+    }
+    .box-plate{
+        display: none;
+    }
+    .mobile-menu-open{
+        background-color: rgba(0,0,0,0);
+        border: none;
+        width: 40px;
+        height: 40px;
+       
+    }
+
+
+}
+@media screen and (min-width:768px) and (max-width:1199px) {
+   .container-header{
+       width: 768px;
+       padding: 20px 32px 0 32px;
+   }
+   .page-nav__menu{
+    display: none;
+   }
+.header-btn{
+    display: flex;
+    gap: 25px;
+}
+.mobile-menu-open{
+    width: 40px;
+    height: 40px;
+    background-color: #0000;
+    border: none;
+    padding: 8px 8px;
+}
+}
+
+@media screen and (min-width:1200px) {
+    .container-hero{
+         width: 1200px;
+        }
+
+    .container-header{
+        width: 1200px;
+    }
+       
+
+
+    .logo-header{
+    margin-right: 268px;
+    }
+    .mobile-menu-open{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
