@@ -4,7 +4,7 @@
   margin-left: 15px;
   margin-right: 15px;
   background-image: url(../images/products/mobile/bg\ mob\ 1.jpg);
-  background-size: cover;
+  background-size: auto;
 }
 @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
@@ -41,22 +41,26 @@
   color: black;
 }
 .products-card__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
   padding-top: 123px;
+  padding-bottom: 20px;
   border-radius: 24px;
-  width: 280px;
+  max-width: 280px;
   height: 420px;
 }
 .products-card__title::before {
   content: '';
   width: 200px;
   height: 211px;
-  background-size: cover;
+  background-size: contain;
   position: absolute;
   border-radius: 50%;
-  top: 0;
-  left: 0;
-  transform: translate(50%, -50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -150%);
 }
 .ice-cream-bg {
   background-color: #aec6a5;
@@ -81,6 +85,19 @@
   background-image: url(../images/products/mobile/milkshakes\ mob.jpg);
   border-bottom: 11px solid #d6936d;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .ice-cream::before {
+    background-image: url(../images/products/mobile/ice\ cream\ mob@2x.jpg);
+  }
+  .ice-coffee::before {
+    background-image: url(../images/products/mobile/ice\ coffee\ mob@2x.jpg);
+  }
+  .milkshakes::before {
+    background-image: url(../images/products/mobile/milkshakes\ mob@2x.jpg);
+  }
 }
 .products-card__title {
   font-family: 'Montserrat', sans-serif;
@@ -107,5 +124,16 @@
 .products-card__list {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 170px;
+}
+.products-card__btn {
+  display: flex;
+  align-items: flex-end;
+  flex-grow: 1;
+  border: none;
+  background-color: transparent;
+}
+.products-card__btn-icon {
+  fill: black;
 }
