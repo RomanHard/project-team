@@ -1,0 +1,84 @@
+.morgen {
+  background-image: url(../images/customer-reviews/morgen-font.png);
+  background-size: cover;
+  padding: 0 20px;
+
+  @media (min-width: 768px) and (max-width: 1199px) {
+    padding: 0 31px;
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .morgen {
+    background-image: url('../images/customer-reviews/morgen-font@2.png');
+  }
+}
+
+.morgen__emily {
+  padding-top: 186px;
+  padding-bottom: 420px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .morgen__emily {
+    padding-top: 223px;
+    padding-bottom: 428px;
+  }
+}
+
+@media (min-width: 1200) {
+  .morgen__emily {
+    padding-top: 456px;
+    padding-bottom: 196px;
+  }
+}
+
+.morgen__text {
+  background: #84a178;
+  border-radius: 10px;
+  margin-top: 32px;
+  margin-bottom: 30px;
+  padding: 34px 39px;
+
+  @media (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media (min-width: 768px) {
+    width: 705px;
+    margin: 32px auto;
+    padding: 28px 80px;
+    border-radius: 24px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 968px;
+    margin: 32px auto;
+    padding: 40px 109px;
+  }
+}
+
+.morgen__text--emily {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2.58;
+  text-align: center;
+  color: #fcfcfc;
+}
+
+.morgen__text--los {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.85;
+  text-align: center;
+  color: #000000;
+}
