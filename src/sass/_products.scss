@@ -47,10 +47,11 @@
   width: 100%;
   height: 420px;
 }
-@media screen and (max-width:767px) {
-  .products-card__item {
-  max-width: 280px;} 
-}
+@media screen and (min-width:480px) {
+  .products-wrapper {
+    width: 480px;
+  }}
+
 .products-card__title::before {
   content: '';
   width: 201px;
@@ -146,11 +147,15 @@
 
 @media screen and (min-width: 768px) {
   .products {
-    padding: 60px 30px 80px 30px;
-    margin-left: auto;
-    margin-right: auto;
+    padding-top: 60px 32px 80px 32px;
+    
     background-image: url(../images/products/tablet/bg\ tab.jpg);
   }
+  .products-wrapper {width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
@@ -194,6 +199,7 @@
     padding: 60px 12px 66px 12px;
     background-image: url(../images/products/desktop/bg\ des.jpg);
   }
+  .products-wrapper {width: 1200px;}
 
   @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
@@ -263,3 +269,241 @@ screen and (min-resolution: 2dppx) {
     background-image: url(../images/products/desktop/milkshakes\ des@2x.jpg);
   }
 }}
+
+// ////////////Modal ingredients//////////////////
+
+.backdrop-ing {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition-property: opacity, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop-ing.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal-close-ing-btn {
+  position: absolute;
+  top: 28px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+}
+.modal-ing {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  padding: 28px 20px;
+  background: #FCFCFC;
+  border: 2px solid #F8D24E;
+  border-radius: 10px;
+ }
+
+.modal-form-ing {
+  display: flex;
+  flex-direction: column;
+ }
+
+.modal-subtitle-ing {
+  position: relative;
+  font-family: 'Seymour One', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  color: #131313;
+  margin-bottom: 295px;
+}
+.modal-subtitle-ing::after{content: '';
+  width: 131px;
+  height: 131px;
+  background-color: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)),
+      #D9D9D9;
+    background-image: url(../images/products/mobile/chocolate\ ice\ cream\ mob.jpg);
+    border-bottom: 7px solid #aec6a5;
+    box-shadow: 0px 5px 20px rgba(10, 136, 23, 0.25);
+  background-size: cover;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 30%);}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+      .modal-subtitle-ing::after {
+        background-image: url(../images/products/mobile/chocolate\ ice\ cream\ mob@2x.jpg);
+  }}
+
+    .modal-form-item-ing {
+      position: relative;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 1.2;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding-bottom: 8px;
+      width: 53px;
+      height: 72px;
+      border: 2px solid #9CBE8F;
+      border-radius: 40px;
+      color: #131313;
+    }
+.kcal::before {content: "320";}
+.prote::before {
+  content: "4g";
+}
+.fats::before {
+  content: "8.2g";
+}
+.carbs::before {
+  content: "40.4g";
+}
+.modal-form-item-ing::before {
+      position: absolute;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background-color: #9CBE8F;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 10px;
+      line-height: 2.8;
+      color: #131313;
+}
+.modal-form-link-ing {display: flex;
+justify-content: space-between;}
+
+.modal-caption-ing {
+  font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: center;
+      color: #131313;
+      margin-top: 39px;
+      margin-bottom: 24px;
+}
+.modal-table-ing {width: 100%;
+margin-bottom: 37px;
+}
+.modal-table-cell-ing {
+font-family: 'Montserrat',sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.76;
+color: #131313;
+padding-bottom: 11px;
+}
+.modal-table-cell-ing:nth-child(2){text-align: end;
+}
+.modal-form-ing-input {
+  width: 100%;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84A178;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 11px 16px;
+  margin-bottom: 16px;
+  font-family: 'Montserrat',sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #131313;
+}
+.modal-form-ing-message {
+  width: 100%;
+  height: 84px;
+  padding: 11px 16px;
+  resize: none;
+  background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84A178;
+    border-radius: 10px;
+  cursor: pointer;
+font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #131313;
+margin-bottom: 44px;}
+
+.modal-form-ing-btn { 
+  margin-right: auto;
+  margin-left: auto;
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21px;
+  letter-spacing: 0.06em;
+  color: #131313;
+  background-color: #F8D24E;
+  border-radius: 10px;
+  border-color: inherit;
+  padding: 12px 43px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover
+   {
+    background-color: green;
+  }
+  &:focus{
+    background-color: green;
+    color: white;
+  }
+    &:disabled {
+      background-color: gray;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal-ing {
+      width: 528px;
+    padding-top: 32px;padding-bottom: 32px;}
+  .modal-subtitle-ing {margin-bottom: 186px;}
+  .modal-form-item-ing {
+      font-size: 12px;
+      line-height: 1.25;
+      padding-bottom: 14px;
+      width: 65px;
+      height: 90px;
+  }
+    .modal-form-item-ing::before {
+      width: 53px;
+      height: 53px;
+      font-size: 12px;
+      line-height: 2.33;
+  }
+    .modal-caption-ing {
+      margin-top: 48px;
+}
+.modal-form-ing-label {padding: 0 60px;}
+.modal-form-ing-message {margin-bottom: 32px;}
+.modal-form-link-ing {padding-left: 84px;padding-right: 84px;}}
+
+
+
