@@ -39,19 +39,12 @@
         border: none;
         padding: 0;
         transition: border-color var(--transition);
-                &:hover,
-                &:focus{
-                  background-color: var(--white-color);
-              }
+               
              
       }
       
       .modal-close-btn-icon{
       transition: fill var(--transition);
-              .modal-close-btn:hover &,
-              .modal-close-btn:focus &{
-                  fill: var(--main-color);
-              }
       }
       .modal__title{
         font-family: 'Seymour One';
@@ -194,7 +187,7 @@
     box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     border: none;
-    padding: 12px 33px;
+    padding: 12px 43px;
     gap: 15px;
     height: 42px;
     cursor: pointer;
@@ -206,4 +199,83 @@
     }
   }
 
+  @media screen and (max-width:767px) {
+    .backdrop{
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      width: 100%;
+      height: auto;
+      background-color: rgba(0, 0, 0, 0.2);
+      transition: opasity var(--transition),
+      visibility var(--transition);
+      &.is-hidden{
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      }
+      }
+    .modal{
+      width: 320px;
+      min-height: 966px;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0%);
+    }
+    
+    .modal-close-btn{
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      width: 16px;
+      height: 16px;  
+    }
+    
+    .modal__title{
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 83px;
+    }
+    .modal__page{
+      display: flex;
+      flex-direction: column;
+      gap: 83px;
+      margin-bottom: 24px;
+      align-items: center;
+    }
+
+// #####################          modal-form      #############
+
+
+.modal-form-field {
+  margin-bottom: 12px;
+}
+
+
+.modal-form-input {
+  width: 224px;
+  height: 32px;
+  padding: 8px 12px;
+  
+}
+
+
+.modal-form-message {
+  width: 224px;
+  height: 64px;
+  padding: 8px 12px;
+}
+
+
+.modal-form-submit {
+  font-size: 12px;
+  line-height: 15px;
+  padding: 7px 43px;
+  gap: 15px;
+  height: 32px;
+}
+
+
+  }
 
