@@ -1,0 +1,167 @@
+.about {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background: #84a178;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.about__label {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #fcfcfc;
+}
+
+.about__title {
+  padding-top: 12px;
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.26;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #fcfcfc;
+}
+
+.about__side {
+  padding-top: 32px;
+}
+
+.about__left-side {
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  border-radius: 50%;
+}
+
+.about__images {
+  width: 100%;
+  display: block;
+  padding-top: 21px;
+}
+
+.about__text {
+  margin-bottom: 4px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.75;
+  letter-spacing: 0.04em;
+
+  color: #fcfcfc;
+  width: 70%;
+}
+
+.display-none {
+  display: none;
+}
+
+.about__right-side {
+  padding-top: 40px;
+}
+
+.about__button {
+  margin-top: 20px;
+}
+
+.about__button-icon {
+  margin-left: 32px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 176px;
+  padding: 11px;
+  background: #f8d24e;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 4px #00000040;
+}
+
+.about__button:hover {
+  background: #0a8817;
+}
+
+.about__button:focus {
+  background: #ababab;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+
+  .about__side {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about__left-side {
+    height: max-content;
+  }
+
+  .about__right-side {
+    width: 50%;
+  }
+  .about__text {
+    margin-bottom: 14px;
+    width: 100%;
+  }
+
+  .display-none {
+    display: contents;
+  }
+  .about__button {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+
+  .about__right-side {
+    padding-right: 100px;
+  }
+  .about__text {
+    margin: 0;
+  }
+
+  .about__left-side {
+  }
+}
