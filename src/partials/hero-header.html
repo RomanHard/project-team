@@ -42,7 +42,7 @@
         </ul>
         </nav>
         <div class="header-btn">
-            <button type="button" class="mobile-menu-open">
+            <button type="button" class="mobile-menu-open" data-menu-open>
                 <svg width="25" height="25">
                     <use href="./images/sprite.svg#burger"></use>
                 </svg>
@@ -56,7 +56,59 @@
         </div>
        
 
-    </div>  
+    </div> 
+    <div class="mob-menu" data-menu>
+        <div class="mob-menu__container">
+            <a href="./index.html" target="_blank" rel="noopener noreferrer" 
+                class="logo-mob">
+                <picture>
+                    <source 
+                    srcset="./images/hero-header/tablet/logo-ice-cream-tablet1x.png 1x, 
+                    ./images/hero-header/tablet/logo-ice-cream-tablet2x.png 2x" 
+                    media="(min-width: 768px)" />
+                    <source 
+                    srcset="./images/hero-header/mobile/logo-ice-cream-mobile1x.png 1x, 
+                    ./images/hero-header/mobile/logo-ice-cream-mobile2x.png 2x" 
+                    media="(max-width: 767px)" />
+
+                    <img src="./images/hero-header/mobile/logo-ice-cream-mobile1x.png" 
+                        alt="logo-header"
+                        width="60" height="65">
+
+                </picture>
+            
+            </a>
+            <button type="button" class="mob-menu-close" data-menu-close>
+              <svg class="modal-close-btn-icon" width="32" height="32">
+                <use href="./images/sprite.svg#close-button-mobile" ></use>
+              </svg>
+            </button>
+            <ul class="mob-menu__page">
+                <li class="mob-menu__list">
+                    <a href="" class="mob-menu__link">Home</a>
+                </li>
+                <li class="mob-menu__list">
+                    <a href="" class="mob-menu__link">About us</a>
+                </li>
+                <li class="mob-menu__list">
+                    <a href="" class="mob-menu__link">How it’s made?</a>
+                </li>
+                <li class="mob-menu__list">
+                    <a href="" class="mob-menu__link">Our products</a>
+                </li>
+                <li class="mob-menu__list">
+                    <a href="" class="mob-menu__link">Contact</a>
+                </li>
+            </ul> 
+            <button type="button" class="mob-menu__button" data-modal-open >
+                Buy now
+                <svg  width="14" height="18">
+                    <use href="./images/sprite.svg#buy-now"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    
 </header>
 <section class="hero">
     <div class="container-hero">
@@ -188,6 +240,7 @@
             alt="ice-cream">
 
           </picture>
+          <div class="modal__background color-1"></div>
            
             <p class="modal__list__text">ice cream</p>
         </li>
@@ -208,7 +261,7 @@
             alt="ice-coffee">
 
           </picture>
-            
+          <div class="modal__background color-2"></div>
             <p class="modal__list__text">ice coffee</p>
         </li>
         <li class="modal__list list-3">
@@ -228,7 +281,7 @@
             alt="milkshake">
 
           </picture>
-           
+          <div class="modal__background color-3"></div>
             <p class="modal__list__text">milkshake</p>
         </li>
        </ul>
