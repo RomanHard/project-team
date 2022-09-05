@@ -1,1 +1,1 @@
-@import '../js/modal';
+<include src="../js/modal.js"></include>;
