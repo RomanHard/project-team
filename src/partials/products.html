@@ -1,4 +1,5 @@
-<section class="products">
+<section class="products" id="our-products">
+  <div class="products-wrapper">
   <p class="products__subtitle">100% natural</p>
   <h2 class="products__title">products</h2>
   <ul class="products-card__list list">
@@ -8,7 +9,7 @@
         Soft ice cream with a delicate taste. Made with milk, cream, sugar and
         natural stabilizer
       </p>
-      <button type="button" class="products-card__btn">
+      <button type="button" class="products-card__btn" data-modal-ing-open>
         <svg class="products-card__btn-icon" width="40" height="10">
           <use href="./images/sprite.svg#icon-Arrow"></use>
         </svg>
@@ -38,5 +39,62 @@
         </svg>
       </button>
     </li>
-  </ul>
+  </ul></div>
 </section>
+
+<!-------- Modal ingredients ---------->
+
+<div class="backdrop is-hidden" data-modal-ing>
+  <div class="modal-ing">
+    <button type="button" class="modal-close-ing-btn" data-modal-ing-close>
+      <svg class="modal-close-ing-btn-icon" width="18" height="18">
+        <use href="./images/sprite.svg#icon-close-button"></use>
+      </svg>
+    </button>
+    <form class="modal-form-ing">
+      <h2 class="modal-subtitle-ing">Chololate
+        icecream</h2>
+      <ul class="modal-form-link-ing link">
+        <li class="modal-form-item-ing kcal">kcal</li>
+        <li class="modal-form-item-ing prote">Prote...</li>
+        <li class="modal-form-item-ing fats">Fats</li>
+        <li class="modal-form-item-ing carbs">Carbs</li>
+      </ul>
+      <P class="modal-caption-ing">Ingredients</P>
+      <table class="modal-table-ing">
+        <tr class="modal-table-row-ing">
+          <td class="modal-table-cell-ing">Milk</td>
+          <td class="modal-table-cell-ing">100ml</td>
+        </tr>
+        <tr class="modal-table-row-ing">
+          <td class="modal-table-cell-ing">Belgian chocolate</td>
+          <td class="modal-table-cell-ing">20g</td>
+        </tr>
+        <tr class="modal-table-row-ing">
+          <td class="modal-table-cell-ing">Cream</td>
+          <td class="modal-table-cell-ing">150ml</td>
+        </tr>
+        <tr class="modal-table-row-ing">
+          <td class="modal-table-cell-ing">Cocoa powder</td>
+          <td class="modal-table-cell-ing">30g</td>
+        </tr>
+        <tr class="modal-table-row-ing">
+          <td class="modal-table-cell-ing">Sugar</td>
+          <td class="modal-table-cell-ing">40g</td>
+        </tr>
+        <tr class="modal-table-row-ing">
+          <td class="modal-table-cell-ing">Vanilla sugar</td>
+          <td class="modal-table-cell-ing">10g</td>
+        </tr>
+      </table>
+      <label class="modal-form-ing-label">
+        <input type="text" name="user_name" class="modal-form-ing-input" required placeholder="Name" /></label>
+      <label class="modal-form-ing-label">
+        <input type="tel" name="user_phone_number" class="modal-form-ing-input" required placeholder="Phone" /></label>
+      <label class="modal-form-ing-label">
+        <textarea name="user_message" class="modal-form-ing-message" placeholder="Comment"></textarea></label>
+
+      <button type="submit" class="modal-form-ing-btn">Submit</button>
+    </form>
+  </div>
+</div>
