@@ -66,17 +66,32 @@
   background-color: #aec6a5;
 }
 .ice-cream::before {
-  background-image: url(../images/products/mobile/ice\ cream\ mob.jpg), linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)),
+  background-color: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)),
     #D9D9D9;
+  background-image: url(../images/products/mobile/ice\ cream\ mob.jpg);
   border-bottom: 11px solid #aec6a5;
   box-shadow: 0px 5px 20px rgba(10, 136, 23, 0.25);
 }
+// .ice-cream::after {
+//   content: "";
+//   width: 200px;
+//   height: 200px;
+//   background-size: cover;
+//   position: absolute;
+//   border-radius: 50%;
+//     background-image: url(../images/products/mobile/ice\ cream\ mob.jpg);
+//     position: absolute;
+//     left: 50%;
+//     top:50%;
+//   transform: translate(-50%, -158%);
+// }
 .ice-coffee-bg {
   background-color: #efd478;
 }
 .ice-coffee::before {
-  background-image: url(../images/products/mobile/ice\ coffee\ mob.jpg), linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)),
+  background-color: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)),
     #D9D9D9;
+  background-image: url(../images/products/mobile/ice\ cream\ mob.jpg);
   border-bottom: 11px solid #efd478;
   box-shadow: 0px 5px 20px rgba(153, 114, 23, 0.25);
 }
@@ -84,8 +99,9 @@
   background-color: #d6936d;
 }
 .milkshakes::before {
-  background-image: url(../images/products/mobile/milkshakes\ mob.jpg), linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)),
+  background-color: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)),
     #D9D9D9;
+  background-image: url(../images/products/mobile/milkshakes\ mob.jpg);
   border-bottom: 11px solid #d6936d;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
 }
@@ -229,20 +245,18 @@
   height: 317px;
 }
 .ice-cream::before {
-  background-image: url(../images/products/desktop/ice\ cream\ des.jpg), linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7), #D9D9D9);
+  background-image: url(../images/products/desktop/ice\ cream\ des.jpg);
   border-bottom: 17px solid #aec6a5;
   box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
 }
 
 .ice-coffee::before {
-  background-image: url(../images/products/desktop/ice\ coffee\ des.jpg), linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)),
-    #D9D9D9;
+  background-image: url(../images/products/desktop/ice\ coffee\ des.jpg);
   border-bottom: 17px solid #efd478;
   box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
 }
 .milkshakes::before {
-  background-image: url(../images/products/desktop/milkshakes\ des.jpg), linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)),
-    #D9D9D9;
+  background-image: url(../images/products/desktop/milkshakes\ des.jpg);
   border-bottom: 17px solid #d6936d;
   box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
 }
