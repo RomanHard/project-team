@@ -156,11 +156,18 @@
   display: flex;
   align-items: flex-end;
   flex-grow: 1;
-  border: none;
+  border-style: none;
   background-color: transparent;
 }
 .products-card__btn-icon {
-  fill: black;
+  fill: #131313;
+}
+.products-card__btn-icon:hover {
+  width: 50px;
+}
+.products-card__btn > .products-card__btn-icon:focus {
+  width: 50px;
+  height: 30px;
 }
 
 // ////////////Tablet//////////////////
@@ -338,12 +345,15 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
+  width: 280px;
   height: 100%;
   padding: 28px 20px;
+  margin-left: auto;
+  margin-right: auto;
   background: #fcfcfc;
   border: 2px solid #f8d24e;
   border-radius: 10px;
+  overflow: auto;
 }
 
 .modal-form-ing {
@@ -359,12 +369,12 @@
   line-height: 1.4;
   text-align: center;
   color: #131313;
-  margin-bottom: 295px;
+  margin-bottom: 184px;
 }
 .modal-subtitle-ing::after {
   content: '';
   width: 131px;
-  height: 131px;
+  height: 138px;
   background-color: linear-gradient(
       0deg,
       rgba(156, 190, 143, 0.7),
@@ -379,7 +389,7 @@
   border-radius: 50%;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, 30%);
+  transform: translate(-50%, 35%);
 }
 @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
@@ -423,7 +433,7 @@
   height: 46px;
   border-radius: 50%;
   background-color: #9cbe8f;
-  top: 0;
+  top: -1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -450,7 +460,7 @@
 }
 .modal-table-ing {
   width: 100%;
-  margin-bottom: 37px;
+  margin-bottom: 48px;
 }
 .modal-table-cell-ing {
   font-family: 'Montserrat', sans-serif;
@@ -491,7 +501,7 @@
   font-size: 14px;
   line-height: 1.4;
   color: #131313;
-  margin-bottom: 44px;
+  margin-bottom: 32px;
 }
 
 .modal-form-ing-btn {
@@ -505,7 +515,7 @@
   color: #131313;
   background-color: #f8d24e;
   border-radius: 10px;
-  border-color: inherit;
+  border-style: none;
   padding: 12px 43px;
   transition-property: background-color;
   transition-duration: 250ms;
@@ -549,9 +559,6 @@
   }
   .modal-form-ing-label {
     padding: 0 60px;
-  }
-  .modal-form-ing-message {
-    margin-bottom: 32px;
   }
   .modal-form-link-ing {
     padding-left: 84px;
