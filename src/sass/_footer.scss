@@ -1,0 +1,130 @@
+.label {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  text-transform: uppercase;
+  color: #fcfcfc;
+}
+.label2 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1.21;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fcfcfc;
+}
+.footer {
+  background-color: #84a178;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 30px;
+  margin-bottom: 38px;
+}
+.title {
+  margin-bottom: 40px;
+}
+.contact {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 186%;
+  text-align: right;
+  color: #131313;
+  margin-bottom: 40px;
+}
+.tel {
+  color: #ffffff;
+}
+.rights-item {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 152%;
+  text-align: center;
+  color: #7a7a7a;
+}
+.rights {
+  border-top: 1px solid #e1e1e1;
+  padding-top: 16px;
+}
+.footer-general {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.svg {
+  fill: #84a178;
+}
+.svg :hover,
+.svg :focus {
+  fill: #fcfcfc;
+}
+@media screen and (min-width: 480px) {
+  .footer-general {
+    margin-left: auto;
+    margin-right: auto;
+    width: 480px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-bottom: 13px;
+  }
+  .footer-general {
+    width: 768px;
+  }
+  .label {
+    font-size: 26px;
+    line-height: 1.23;
+  }
+  .label2 {
+    font-size: 58px;
+    line-height: 1.22;
+  }
+  .contact {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .label {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.23;
+  }
+  .label2 {
+    font-size: 58px;
+    line-height: 1.22;
+  }
+  .footer-general {
+    width: 1200px;
+  }
+  .footer {
+    padding-bottom: 11px;
+    padding-top: 40px;
+  }
+  .footer-general {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 54px;
+  }
+  .rights {
+    margin-left: 17px;
+    margin-right: 17px;
+  }
+  .contact {
+    font-size: 16px;
+  }
+}
