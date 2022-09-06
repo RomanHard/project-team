@@ -517,7 +517,9 @@
   font-size: 14px;
   line-height: 1.4;
   color: #131313;
+  outline: none;
 }
+
 .modal-form-ing-message {
   width: 100%;
   height: 84px;
@@ -533,8 +535,16 @@
   line-height: 1.4;
   color: #131313;
   margin-bottom: 32px;
+  outline: none;
 }
-
+.modal-form-ing-input:hover,
+.modal-form-ing-input:focus,
+.modal-form-ing-input:active,
+.modal-form-ing-message:hover,
+.modal-form-ing-message:focus,
+.modal-form-ing-message:active {
+  border-color: #f8d24e;
+}
 .modal-form-ing-btn {
   margin-right: auto;
   margin-left: auto;
