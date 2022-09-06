@@ -1,45 +1,46 @@
 <section class="products" id="our-products">
   <div class="products-wrapper">
-  <p class="products__subtitle">100% natural</p>
-  <h2 class="products__title">products</h2>
-  <ul class="products-card__list list">
-    <li class="products-card__item ice-cream-bg">
-      <h3 class="products-card__title ice-cream">ice cream</h3>
-      <p class="products-card__text">
-        Soft ice cream with a delicate taste. Made with milk, cream, sugar and
-        natural stabilizer
-      </p>
-      <button type="button" class="products-card__btn" data-modal-ing-open>
-        <svg class="products-card__btn-icon" width="40" height="10">
-          <use href="./images/sprite.svg#icon-Arrow"></use>
-        </svg>
-      </button>
-    </li>
-    <li class="products-card__item ice-coffee-bg">
-      <h3 class="products-card__title ice-coffee">ice coffee</h3>
-      <p class="products-card__text">
-        Fragrant invigorating drink created from 100% natural ingredients
-        without the use of preservatives and flavor enhancers
-      </p>
-      <button type="button" class="products-card__btn">
-        <svg class="products-card__btn-icon" width="40" height="10">
-          <use href="./images/sprite.svg#icon-Arrow"></use>
-        </svg>
-      </button>
-    </li>
-    <li class="products-card__item milkshakes-bg">
-      <h3 class="products-card__title milkshakes">milkshakes</h3>
-      <p class="products-card__text">
-        Sweet drinks based on milk and ice cream, supplemented with syrups,
-        fruits, berries and other sweets of your choice
-      </p>
-      <button type="button" class="products-card__btn">
-        <svg class="products-card__btn-icon" width="40" height="10">
-          <use href="./images/sprite.svg#icon-Arrow"></use>
-        </svg>
-      </button>
-    </li>
-  </ul></div>
+    <p class="products__subtitle">100% natural</p>
+    <h2 class="products__title">products</h2>
+    <ul class="products-card__list list">
+      <li class="products-card__item ice-cream-bg">
+        <h3 class="products-card__title ice-cream">ice cream</h3>
+        <p class="products-card__text">
+          Soft ice cream with a delicate taste. Made with milk, cream, sugar and
+          natural stabilizer
+        </p>
+        <button type="button" class="products-card__btn" data-modal-ing-open>
+          <svg class="products-card__btn-icon" width="40" height="20">
+            <use href="./images/sprite.svg#icon-Arrow"></use>
+          </svg>
+        </button>
+      </li>
+      <li class="products-card__item ice-coffee-bg">
+        <h3 class="products-card__title ice-coffee">ice coffee</h3>
+        <p class="products-card__text">
+          Fragrant invigorating drink created from 100% natural ingredients
+          without the use of preservatives and flavor enhancers
+        </p>
+        <button type="button" class="products-card__btn">
+          <svg class="products-card__btn-icon" width="40" height="20">
+            <use href="./images/sprite.svg#icon-Arrow"></use>
+          </svg>
+        </button>
+      </li>
+      <li class="products-card__item milkshakes-bg">
+        <h3 class="products-card__title milkshakes">milkshakes</h3>
+        <p class="products-card__text">
+          Sweet drinks based on milk and ice cream, supplemented with syrups,
+          fruits, berries and other sweets of your choice
+        </p>
+        <button type="button" class="products-card__btn">
+          <svg class="products-card__btn-icon" width="40" height="20">
+            <use href="./images/sprite.svg#icon-Arrow"></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
+  </div>
 </section>
 
 <!-------- Modal ingredients ---------->
@@ -52,15 +53,14 @@
       </svg>
     </button>
     <form class="modal-form-ing">
-      <h2 class="modal-subtitle-ing">Chololate
-        icecream</h2>
+      <h2 class="modal-subtitle-ing">Chololate icecream</h2>
       <ul class="modal-form-link-ing link">
         <li class="modal-form-item-ing kcal">kcal</li>
         <li class="modal-form-item-ing prote">Prote...</li>
         <li class="modal-form-item-ing fats">Fats</li>
         <li class="modal-form-item-ing carbs">Carbs</li>
       </ul>
-      <P class="modal-caption-ing">Ingredients</P>
+      <p class="modal-caption-ing">Ingredients</p>
       <table class="modal-table-ing">
         <tr class="modal-table-row-ing">
           <td class="modal-table-cell-ing">Milk</td>
@@ -88,11 +88,28 @@
         </tr>
       </table>
       <label class="modal-form-ing-label">
-        <input type="text" name="user_name" class="modal-form-ing-input" required placeholder="Name" /></label>
+        <input
+          type="text"
+          name="user_name"
+          class="modal-form-ing-input"
+          required
+          placeholder="Name"
+      /></label>
       <label class="modal-form-ing-label">
-        <input type="tel" name="user_phone_number" class="modal-form-ing-input" required placeholder="Phone" /></label>
+        <input
+          type="tel"
+          name="user_phone_number"
+          class="modal-form-ing-input"
+          required
+          placeholder="Phone"
+      /></label>
       <label class="modal-form-ing-label">
-        <textarea name="user_message" class="modal-form-ing-message" placeholder="Comment"></textarea></label>
+        <textarea
+          name="user_message"
+          class="modal-form-ing-message"
+          placeholder="Comment"
+        ></textarea>
+      </label>
 
       <button type="submit" class="modal-form-ing-btn">Submit</button>
     </form>
