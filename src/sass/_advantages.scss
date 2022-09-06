@@ -4,6 +4,20 @@
   background-color: #84a178;
 }
 
+@media screen and (min-width: 768px) {
+  .advantages {
+    padding-top: 48px;
+    padding-bottom: 204px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages {
+    padding-top: 60px;
+    padding-bottom: 180px;
+  }
+}
+
 .advantages__title {
   font-family: 'Seymour One', sans-serif;
   font-style: normal;
