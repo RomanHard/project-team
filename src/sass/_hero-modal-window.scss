@@ -190,12 +190,19 @@
     padding: 12px 43px;
     gap: 15px;
     height: 42px;
-    cursor: pointer;
     text-transform: none;
     
-    &:hover,
+    &:hover{
+      background-color: #0A8817;
+
+    }
     &:focus{
         background-color: #0A8817;
+        color: #FCFCFC;
+        fill: #FCFCFC;
+    }
+    &:disabled{
+        background-color: #ABABAB;
     }
   }
 
