@@ -191,6 +191,7 @@
     gap: 15px;
     height: 42px;
     text-transform: none;
+    transition: background-color, color, fill, var(--transition) ;
     
     &:hover{
       background-color: #0A8817;
