@@ -31,8 +31,13 @@
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-
   color: #fcfcfc;
+
+  @media screen and (max-width: 767px) {
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .about__side {
@@ -74,6 +79,9 @@
 
 .about__right-side {
   padding-top: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .about__button {
@@ -138,7 +146,7 @@
     width: 50%;
   }
   .about__text {
-    margin-bottom: 14px;
+    margin-bottom: 8px;
     width: 100%;
   }
 
@@ -156,12 +164,27 @@
   }
 
   .about__right-side {
-    padding-right: 100px;
+    padding-right: 121px;
+    margin-left: 100px;
   }
   .about__text {
-    margin: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.76;
+    max-width: 463px;
+    letter-spacing: 0.04em;
   }
+  .about__side {
+    display: flex;
+    justify-content: center;
+  }
+}
 
-  .about__left-side {
+@media screen and (max-width: 767px) {
+  .about__text {
+    max-width: 220px;
+    text-align: center;
   }
 }
