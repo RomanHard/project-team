@@ -1,0 +1,535 @@
+.contact {
+    background: #84A178;
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+    }
+    
+    .contact__flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-box {
+
+        background: #FFFFFF;
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+        border-radius: 24px;
+        width: 280px;
+        height: 412px;
+        padding-left: 32px;
+        padding-right: 36px;
+        padding-top: 40px;
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+    .contact-title {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: center;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #FCFCFC;
+        background: #F8D24E;
+        border-radius: 4px;
+    }
+
+    .contact-title__first {
+        width: 80px;
+        height: 16px;
+    }
+
+    .contact-title__second {
+        width: 130px;
+        height: 16px;
+    }
+
+    .contact-title__location {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 186%;
+        letter-spacing: 0.04em;
+        color: #000000;
+        padding-top: 20px;
+        padding-bottom: 8px;
+    }
+
+    .large-screen__1,
+    .large-screen__2,
+    .medium-screen__3,
+    .large-screen__3{
+        display: none;
+    }
+
+    .contact-map {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 183%;
+        letter-spacing: 0.04em;
+        color: #D6936D;
+
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+            outline: none;
+            cursor: default;
+        }
+    }
+
+    hr {
+        align-items: center;
+        width: 216px;
+        height: 0px;
+        border: 1px solid #E1E1E1;
+        background-color: #E1E1E1;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    .contact-day,
+    .contact-day__wekend {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 186%;
+        color: #000000;
+    }
+
+    .contact-time {
+        padding-bottom: 8px;
+    }
+
+    .contact-time,
+    .contact-time__wekend {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 186%;
+        color: #ABABAB;
+    }
+
+    .contact-tel {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        color: #131313;
+    }
+
+    .cotact-mail {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        color: #131313;
+        margin-bottom: 40px;
+    }
+
+    .contact-btn {
+        text-align: center;
+        padding-top: 32px;
+        padding-bottom: 40px;
+    }
+
+    .contact-btn__first {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        align-items: center;
+        text-align: center;
+        color: #131313;
+        width: 196px;
+        height: 42px;
+        background: #F8D24E;
+        border: #F8D24E;
+        border-radius: 10px;
+    }
+
+    .contact-btn__second {
+        margin-top: 16px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        align-items: center;
+        text-align: center;
+        color: #FCFCFC;
+        width: 196px;
+        height: 42px;
+        border: 2px solid #F8D24E;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
+@media (min-width:768px) and (max-width:1999px) {
+
+    .container {
+        padding-left: 32px;
+        padding-right: 32px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact__flex-box {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-box {
+        background: #FFFFFF;
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+        border-radius: 24px;
+        width: 224px;
+        height: 528px;
+        padding-left: 24px;
+        padding-right: 27px;
+        padding-top: 40px;
+
+        &:not(:last-child) {
+            margin-right: 16px;
+        }
+    }
+
+    .contact-title {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 186%;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #131313;
+        background: #F8D24E;
+        border-radius: 6px;
+    }
+
+    .contact-title__first {
+        width: 73px;
+        height: 28px;
+    }
+
+    .contact-title__second {
+        width: 138px;
+        height: 28px;
+    }
+
+    .contact-title__location {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 186%;
+        letter-spacing: 0.04em;
+        color: #131313;
+        padding-top: 32px;
+        padding-bottom: 12px;
+    }
+
+    .contact-map {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 183%;
+        letter-spacing: 0.04em;
+        color: #D6936D;
+
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+            outline: none;
+            cursor: default;
+        }
+    }
+
+    .large-screen__1,
+    .small-screen__2,
+    .small-screen__3,
+    .large-screen__3 {
+        display: none;
+    }
+
+    hr {
+        align-items: center;
+        width: 160px;
+        height: 0px;
+        border: 1px solid #E1E1E1;
+        background-color: #E1E1E1;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    .contact-day,
+    .contact-day__wekend {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 186%;
+        letter-spacing: 0.04em;
+        color: #131313;
+    }
+
+    .contact-time {
+        padding-bottom: 12px;
+    }
+
+    .contact-time,
+    .contact-time__wekend {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 186%;
+        color: #ABABAB;
+    }
+
+    .contact-tel {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 183%;
+        color: #131313;
+    }
+
+    .cotact-mail {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 183%;
+        color: #131313;
+        margin-bottom: 40px;
+    }
+
+    .contact-btn {
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+
+    .contact-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-btn__first {
+        width: 196px;
+        height: 42px;
+        background: #F8D24E;
+        border: #F8D24E;
+        border-radius: 10px;
+        margin-right: 16px;
+    }
+
+    .contact-btn__second {
+        width: 196px;
+        height: 42px;
+        border: 2px solid #F8D24E;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0);
+        color: #FCFCFC;
+    }
+
+}
+@media screen and (min-width:1200px) {
+
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact__flex-box {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-box {
+        background: #FFFFFF;
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+        border-radius: 24px;
+        width: 368px;
+        height: 538px;
+        padding-left: 40px;
+        padding-top: 40px;
+
+        &:not(:last-child) {
+            margin-right: 32px;
+        }
+    }
+
+    .contact-title {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 186%;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #131313;
+        background: #F8D24E;
+        border-radius: 6px;
+    }
+
+    .contact-title__first {
+        width: 75px;
+        height: 28px;
+    }
+
+    .contact-title__second {
+        width: 138px;
+        height: 28px;
+    }
+
+    .contact-title__location {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 186%;
+        letter-spacing: 0.04em;
+        color: #131313;
+        padding-top: 32px;
+        padding-bottom: 8px;
+    }
+
+    .contact-map {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 183%;
+        letter-spacing: 0.04em;
+        color: #D6936D;
+
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+            outline: none;
+            cursor: default;
+        }
+    }
+
+    // .small-screen__1,
+    // .large-screen__2,
+    // .medium-screen__3,
+    // .small-screen__3 {
+    //     display: none;
+    // }
+
+    hr {
+        align-items: center;
+        width: 288px;
+        height: 0px;
+        border: 1px solid #E1E1E1;
+        background-color: #E1E1E1;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    .contact-day,
+    .contact-day__wekend {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 186%;
+        letter-spacing: 0.04em;
+        color: #131313;
+    }
+
+    .contact-time {
+        padding-bottom: 12px;
+    }
+
+    .contact-time,
+    .contact-time__wekend {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 186%;
+        color: #ABABAB;
+    }
+
+    .contact-tel {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 183%;
+        color: #131313;
+    }
+
+    .cotact-mail {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 183%;
+        color: #131313;
+        margin-bottom: 40px;
+    }
+
+    .contact-btn {
+        text-align: center;
+        padding-top: 64px;
+        padding-bottom: 120px;
+    }
+
+    .contact-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-btn__first {
+        width: 196px;
+        height: 42px;
+        background: #F8D24E;
+        border: #F8D24E;
+        border-radius: 10px;
+        margin-right: 16px;
+    }
+
+    .contact-btn__second {
+        width: 196px;
+        height: 42px;
+        border: 2px solid #F8D24E;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0);
+        color: #FCFCFC;
+    }
+}
