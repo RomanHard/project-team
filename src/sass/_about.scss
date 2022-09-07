@@ -1,6 +1,5 @@
 .about {
   padding-top: 60px;
-  padding-bottom: 40px;
   background: #84a178;
 }
 
@@ -125,6 +124,9 @@
     width: 480px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .about__right-side {
+    align-items: flex-start;
   }
 }
 
