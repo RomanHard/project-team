@@ -17,23 +17,27 @@
 }
 
 .morgen__emily {
-  padding-top: 186px;
+  padding-top: 451px;
   padding-bottom: 420px;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
+@media (max-width: 767) {
+  padding-top: 181px;
+}
+
 @media (min-width: 768px) and (max-width: 1199px) {
   .morgen__emily {
-    padding-top: 223px;
+    padding-top: 218px;
     padding-bottom: 428px;
   }
 }
 
 @media (min-width: 1200) {
   .morgen__emily {
-    padding-top: 456px;
+    padding-top: 451px;
     padding-bottom: 196px;
   }
 }
