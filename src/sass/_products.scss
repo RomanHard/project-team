@@ -1,8 +1,8 @@
 .products {
   width: 100%;
-  padding: 60px 20px;
-  margin-left: 15px;
-  margin-right: 15px;
+  padding: 60px 0;
+  margin-left: auto;
+  margin-right: auto;
   background-image: url(../images/products/mobile/bg\ mob\ 1.jpg);
   background-size: cover;
 }
@@ -13,7 +13,6 @@
     background-image: url(../images/products/mobile/bg\ mob\ 1@2x.jpg);
   }
 }
-
 .products__subtitle {
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
@@ -52,13 +51,7 @@
     max-width: 280px;
   }
 }
-@media screen and (min-width: 480px) {
-  .products-wrapper {
-    width: 480px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
+
 .ice-cream-bg {
   background-color: #aec6a5;
 }
@@ -163,31 +156,37 @@
   gap: 170px;
 }
 .products-card__btn {
+  position: relative;
   display: flex;
   align-items: flex-end;
   flex-grow: 1;
-  border-style: none;
   background-color: transparent;
+  border-style: none;
+  outline: none;
 }
+
 .products-card__btn-icon {
   fill: #131313;
+  transition-property: width;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.products-card__btn-icon:hover {
+.products-card__btn:hover > .products-card__btn-icon {
   width: 50px;
+}
+.products-card__btn:focus > .products-card__btn-icon {
+  width: 50px;
+  height: 30px;
 }
 
 // ////////////Tablet//////////////////
 
 @media screen and (min-width: 768px) {
   .products {
-    padding-top: 60px 32px 80px 32px;
+    padding-top: 60px;
+    padding-bottom: 80px;
 
     background-image: url(../images/products/tablet/bg\ tab.jpg);
-  }
-  .products-wrapper {
-    width: 768px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -242,11 +241,8 @@
 
 @media screen and (min-width: 1200px) {
   .products {
-    padding: 60px 12px 66px 12px;
+    padding: 60px 0 66px 0;
     background-image: url(../images/products/desktop/bg\ des.jpg);
-  }
-  .products-wrapper {
-    width: 1200px;
   }
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -518,6 +514,9 @@
   line-height: 1.4;
   color: #131313;
   outline: none;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-ing-message {
@@ -536,6 +535,9 @@
   color: #131313;
   margin-bottom: 32px;
   outline: none;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-ing-input:hover,
 .modal-form-ing-input:focus,
@@ -545,6 +547,7 @@
 .modal-form-ing-message:active {
   border-color: #f8d24e;
 }
+
 .modal-form-ing-btn {
   margin-right: auto;
   margin-left: auto;
