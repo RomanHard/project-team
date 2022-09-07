@@ -52,11 +52,12 @@
 .page-nav__link {
   color: #fcfcfc;
   padding: 15px 0;
+  transition: color, var(--transition);
   &:hover {
-    color: #0a8817;
+    color: #f8d24e;
   }
   &:focus {
-    color: #fcfcfc;
+    color: #0a8817;
   }
   &:disabled {
     color: #ababab;
