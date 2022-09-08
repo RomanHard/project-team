@@ -169,6 +169,19 @@
     background: #f8d24e;
     border: #f8d24e;
     border-radius: 10px;
+    transition: background-color, color, fill, var(--transition);
+
+    &:hover {
+      background-color: #0a8817;
+    }
+    &:focus {
+      background-color: #0a8817;
+      color: #fcfcfc;
+      fill: #fcfcfc;
+    }
+    &:disabled {
+      background-color: #ababab;
+    }
   }
 
   .contact-btn__second {
@@ -186,6 +199,18 @@
     border: 2px solid #f8d24e;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0);
+    transition: background-color, color, fill, var(--transition);
+
+    &:hover {
+      border: solid 2px #0a8817;
+    }
+    &:focus {
+      border: solid 2px #0a8817;
+      color: #fcfcfc;
+    }
+    &:disabled {
+      border: solid 2px #ababab;
+    }
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -353,6 +378,19 @@
     border: #f8d24e;
     border-radius: 10px;
     margin-right: 16px;
+
+    transition: background-color, color, fill, var(--transition);
+    &:hover {
+      background-color: #0a8817;
+    }
+    &:focus {
+      background-color: #0a8817;
+      color: #fcfcfc;
+      fill: #fcfcfc;
+    }
+    &:disabled {
+      background-color: #ababab;
+    }
   }
 
   .contact-btn__second {
@@ -362,6 +400,18 @@
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0);
     color: #fcfcfc;
+    transition: background-color, color, fill, var(--transition);
+
+    &:hover {
+      border: solid 2px #0a8817;
+    }
+    &:focus {
+      border: solid 2px #0a8817;
+      color: #fcfcfc;
+    }
+    &:disabled {
+      border: solid 2px #ababab;
+    }
   }
 }
 @media screen and (min-width: 1200px) {
@@ -528,6 +578,19 @@
     border: #f8d24e;
     border-radius: 10px;
     margin-right: 16px;
+    transition: background-color, color, fill, var(--transition);
+
+    &:hover {
+      background-color: #0a8817;
+    }
+    &:focus {
+      background-color: #0a8817;
+      color: #fcfcfc;
+      fill: #fcfcfc;
+    }
+    &:disabled {
+      background-color: #ababab;
+    }
   }
 
   .contact-btn__second {
@@ -537,5 +600,17 @@
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0);
     color: #fcfcfc;
+    transition: background-color, color, fill, var(--transition);
+
+    &:hover {
+      border: solid 2px #0a8817;
+    }
+    &:focus {
+      border: solid 2px #0a8817;
+      color: #fcfcfc;
+    }
+    &:disabled {
+      border: solid 2px #ababab;
+    }
   }
 }
